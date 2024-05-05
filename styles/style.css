@@ -1,0 +1,274 @@
+.link {
+  border-bottom: 1px solid currentColor;
+  text-decoration: none;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 92px 26px 90px;
+}
+
+.header__logo-image {
+  width: 148px;
+  height: 105px;
+}
+
+.header__contacts {
+  margin-left: auto;
+}
+
+.header__links-list {
+  display: flex;
+  gap: 29px;
+  margin: 0;
+  padding: 0;
+  text-transform: lowercase;
+  list-style: none;
+}
+
+.header__links-list-item {
+  white-space: nowrap;
+}
+
+.header__links-list-item + .header__links-list-item {
+  padding-left: 4px;
+  letter-spacing: 0.01em;
+  list-style: circle;
+}
+
+.contacts {
+  width: 240px;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.cover {
+  margin: 0 -24px 180px;
+  color: #fff;
+  text-transform: uppercase;
+  background: url(../images/cover.jpg) 50% 50% / cover;
+}
+
+.cover__content {
+  padding: 164px 50px 51px;
+}
+
+.cover__title {
+  font-size: 100px;
+}
+
+.cover__title-line {
+  display: block;
+  letter-spacing: 0.3em;
+}
+
+.cover__title-line span {
+  letter-spacing: 0.6em;
+}
+
+.cover__title-line_pos_first {
+  line-height: 118px;
+}
+
+.cover__title-line_pos_second {
+  line-height: 132px;
+  text-align: center;
+}
+
+.cover__title-line_pos_third {
+  margin-right: -0.3em;
+  line-height: 112px;
+  letter-spacing: 0.3em;
+  text-align: right;
+}
+
+.cover__description {
+  display: flex;
+  align-items: center;
+  margin-top: 128px;
+}
+
+.cover__description-text {
+  flex: 1;
+  margin: 0 80px -28px 28px;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: justify;
+}
+
+.cover__description-text::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+.bet-button {
+  border: 1px solid #fff;
+  padding: 12px 32px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  text-transform: uppercase;
+  background: transparent;
+}
+
+.lots {
+  margin: 0 0 181px;
+}
+
+.lots__heading {
+  margin: 0 0 27px 40px;
+}
+
+.lots__card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  list-style: none;
+}
+
+.lots__card-list-item {
+  /* Треть доступной ширины с учётом двух отступов по 25px */
+  flex: 1 0 calc((100% - 50px) / 3);
+}
+
+.lots__footer {
+  margin: 30px 0 0 40px;
+  font-size: 20px;
+}
+
+.card-link {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+}
+
+.card {
+  position: relative;
+  height: 100%;
+  min-height: 563px;
+  color: #fff;
+  background: 50% / cover;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 50px 40px 48px;
+}
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+}
+
+.card__title {
+  font-size: 22px;
+  line-height: 26px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.card__text {
+  font-size: 20px;
+}
+
+.about {
+  display: flex;
+  gap: 25px;
+}
+
+.about__logo {
+  position: relative;
+  flex: 0 0 calc((100% - 50px) / 3);
+}
+
+.about__logo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 240px;
+  height: 240px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: #000 no-repeat url(../images/logo-white.svg) 50% 50% / 148px;
+}
+
+.about__content {
+  padding: 102px 0 0;
+}
+
+.about__title {
+  margin-bottom: 100px;
+}
+
+.about__text {
+  font-size: 20px;
+  letter-spacing: 0.01em;
+}
+
+.about__text + .about__text {
+  margin-top: 24px;
+}
+
+.title {
+  font-size: 40px;
+  line-height: 47px;
+  text-transform: uppercase;
+}
+
+.footer {
+  display: flex;
+  padding: 180px 26px 88px;
+}
+
+.footer__side {
+  flex: 1 1 0;
+}
+
+.footer__menu-list {
+  margin: 0;
+  padding: 0;
+  line-height: 21px;
+  text-align: center;
+  text-transform: lowercase;
+  list-style: none;
+}
+
+.footer__social-list {
+  font: 0/0 a;
+  text-align: right;
+  list-style: none;
+}
+
+.footer__social-list-item {
+  display: inline-block;
+}
+
+.footer__social-link {
+  display: block;
+}
+
+.footer__social-icon {
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+
+.footer__social-list-item + .footer__social-list-item {
+  margin-left: 48px;
+}
